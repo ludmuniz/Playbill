@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLAYBILL: Comédia Romântica</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=EB+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+    <header class="playbill-cover">
+        <div class="spotlight-overlay"></div>
+
+        <div class="playbill-header">
+            <span>THE CORDEIRO THEATRE</span>
+            <div class="playbill-logo">PLAYBILL</div>
+            <span>NOVEMBRO 2025</span>
+        </div>
+
+        <div class="show-poster" style="background-image: url('https://via.placeholder.com/500x600?text=NOSSO+PÔSTER+AQUI');">
+            </div>
+
+        <h1 class="show-title">O ESPETÁCULO DE NÓS DUAS</h1>
+    </header>
+
+    <main class="playbill-inside">
+
+        <section id="cast" class="act">
+            <h2>Quem é quem no elenco</h2>
+            <div class="cast-list">
+                <div class="cast-member">
+                    <img src="https://via.placeholder.com/150?text=Foto+Sua" alt="[Seu Nome]">
+                    <h3>[Seu Nome]</h3>
+                    <p class="role">...como O Protagonista Incansável</p>
+                    <p class="bio">[Escreva uma mini-bio sua aqui. "Originalmente do elenco de... brincando, amor. Desde o dia que te conheci..."]</p>
+                </div>
+                <div class="cast-member">
+                    <img src="https://via.placeholder.com/150?text=Foto+Dela" alt="[Nome Dela]">
+                    <h3>[Nome Dela]</h3>
+                    <p class="role">...como A Estrela Brilhante</p>
+                    <p class="bio">[Mini-bio dela aqui. "Fazendo sua estreia em meu coração... e roubando a cena desde então. Ela traz luz..."]</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="story" class="act">
+            <h2>Nossa História em Dois Atos</h2>
+            
+            <div class="story-act">
+                <h3>Ato I: O Encontro</h3>
+                <p>[COLOQUE AQUI A PRIMEIRA PARTE DA SUA HISTÓRIA]</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. ...</p>
+            </div>
+            
+            <div class="story-act">
+                <h3>Ato II: A Jornada</h3>
+                <p>[COLOQUE AQUI A SEGUNDA PARTE DA SUA HISTÓRIA]</p>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. ...</p>
+            </div>
+        </section>
+
+        <section id="timer" class="act">
+            <h2>Em Cartaz Há...</h2>
+            <div class="timer-container">
+                <div class="time-box"><span id="years">0</span> Anos</div>
+                <div class="time-box"><span id="days">0</span> Dias</div>
+                <div class="time-box"><span id="hours">0</span> Horas</div>
+                <div class="time-box"><span id="minutes">0</span> Minutos</div>
+                <div class="time-box"><span id="seconds">0</span> Segundos</div>
+            </div>
+        </section>
+
+        <section id="thanks" class="act">
+            <h2>Agradecimentos Especiais</h2>
+            
+            <div class="thanks-images">
+                <img src="https://via.placeholder.com/300x200?text=Foto+Especial+1" alt="Momento 1">
+                <img src="https://via.placeholder.com/300x200?text=Foto+Especial+2" alt="Momento 2">
+            </div>
+            
+            <div class="thanks-note">
+                <p>"Para [Nome Dela], a co-estrela que tornou cada cena inesquecível.</p>
+                <p>Você é a minha maior inspiração. Com todo o meu amor."</p>
+                <p class="signature">[Seu Nome]</p>
+            </div>
+        </section>
+
+
+        <section id="gallery" class="act">
+            <h2>Production Photos</h2>
+            <div class="gallery-grid">
+                <img src="https://via.placeholder.com/300x300?text=Foto+1" alt="Nossa primeira foto" 
+                     data-description="Lembra desse dia? Foi aqui que tudo começou a parecer um sonho. (Use a pasta /fotos)">
+                
+                <img src="https://via.placeholder.com/300x300?text=Foto+2" alt="Viagem" 
+                     data-description="A viagem para a praia. O sol estava incrível, mas não tanto quanto seu sorriso.">
+                
+                <img src="https://via.placeholder.com/300x300?text=Foto+3" alt="Jantar" 
+                     data-description="Aquele jantar que tentamos cozinhar e queimamos tudo. Rimos até a barriga doer.">
+                
+                 <img src="https://via.placeholder.com/300x300?text=Foto+4" alt="Show" 
+                     data-description="No show daquela banda que amamos. Cantamos todas as músicas erradas.">
+            </div>
+        </section>
+
+    </main>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-button">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <p id="lightbox-caption"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

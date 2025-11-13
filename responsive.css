@@ -1,0 +1,82 @@
+/* Media Queries para Responsividade */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .playbill-inside {
+        padding: 1rem;
+    }
+
+    .act h2 {
+        font-size: 2rem;
+    }
+
+    /* Elenco empilhado */
+    .cast-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cast-member {
+        flex-basis: 100%;
+        max-width: 400px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .thanks-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .thanks-images img {
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+
+    .thanks-note {
+        font-size: 1.1rem;
+    }
+}
+
+/* Celulares */
+@media (max-width: 550px) {
+    /* A capa ocupa a tela toda */
+    .playbill-cover {
+        width: 95%;
+        margin: 1rem auto;
+    }
+
+    .playbill-header {
+        font-size: 0.7rem;
+        padding: 8px 10px;
+    }
+    .playbill-logo {
+        font-size: 1.3rem;
+    }
+
+    .show-poster {
+        height: 400px;
+    }
+    .show-title {
+        font-size: 1.8rem;
+    }
+
+    /* Timer em coluna */
+    .timer-container {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .time-box {
+        width: 100%;
+    }
+
+    /* Galeria em coluna */
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .lightbox-content {
+        max-width: 90%;
+    }
+}
