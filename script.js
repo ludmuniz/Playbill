@@ -1,26 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
     
-    // --- CONCEITO: EFEITO HOLOFOTE (Spotlight) ---
     const cover = document.querySelector(".playbill-cover");
     const spotlight = document.querySelector(".spotlight-overlay");
 
     cover.addEventListener("mousemove", (e) => {
-        // Pega a posição do mouse DENTRO do elemento "cover"
         const rect = cover.getBoundingClientRect();
         const x = e.clientX - rect.left;
         const y = e.clientY - rect.top;
 
-        // Atualiza o fundo (que é um radial-gradient)
-        // Isso faz o "centro" do gradiente seguir o mouse
         spotlight.style.background = `radial-gradient(circle at ${x}px ${y}px, transparent 10%, rgba(0,0,0,0.7) 100px)`;
     });
 
 
-    // --- ATO I: O TIMER (Igual ao anterior) ---
-    
-    // !!! IMPORTANTE: MUDE ESTA DATA !!!
-    // Formato: Ano, Mês (Janeiro=0, Dezembro=11), Dia, Hora, Minuto, Segundo
-    const dataInicio = new Date(2022, 10, 18, 9, 0, 0).getTime(); // Ex: 15 de Nov de 2020, às 20:00
+    const dataInicio = new Date(2022, 10, 18, 9, 0, 0).getTime();
 
     const timerElement = {
         years: document.getElementById("years"),
@@ -48,9 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     setInterval(updateTimer, 1000);
     updateTimer();
-
-
-    // --- ATO III: O LIGHTBOX DA GALERIA (Igual ao anterior) ---
 
     const lightbox = document.getElementById("lightbox");
     const lightboxImg = document.getElementById("lightbox-img");

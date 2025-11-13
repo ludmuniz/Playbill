@@ -41,7 +41,6 @@
 
 /* Celulares */
 @media (max-width: 550px) {
-    /* A capa ocupa a tela toda */
     .playbill-cover {
         width: 95%;
         margin: 1rem auto;
