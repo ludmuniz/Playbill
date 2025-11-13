@@ -33,7 +33,7 @@ body {
 
 /* A "CAPA" DO PLAYBILL */
 .playbill-cover {
-    max-width: 500px; /* <- DEIXE ASSIM */
+    max-width: 500px;
     margin: 2rem auto;
     border: 1px solid #333;
     background-color: var(--color-playbill-black);
