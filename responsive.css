@@ -1,7 +1,38 @@
-/* Media Queries para Responsividade */
 
-/* Tablets */
 @media (max-width: 768px) {
+    .playbill-header {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;    
+        justify-content: center;  
+        padding: 20px 10px 15px;  
+        flex-shrink: 0;         
+        border-bottom: 4px solid #000; 
+    }
+
+    .playbill-logo {
+        font-family: 'Oswald', sans-serif;
+        font-weight: 700;      
+        font-size: 16vw;        
+        line-height: 0.8;       
+        letter-spacing: -2px;
+        margin-bottom: 8px;      
+        width: 100%;          
+        text-align: center;
+    }
+
+    .theatre-name {
+        font-family: 'EB Garamond', serif;
+        font-weight: 400 !important;
+        font-size: 0.9rem;   
+        text-transform: uppercase;    
+        letter-spacing: 1px;
+        color: #000;
+        margin-top: 0;
+        text-align: center;
+        width: 100%;
+    }
+
     .playbill-inside {
         padding: 1rem;
     }
@@ -49,9 +80,6 @@
     .playbill-header {
         font-size: 0.7rem;
         padding: 8px 10px;
-    }
-    .playbill-logo {
-        font-size: 1.3rem;
     }
 
     .show-poster {
