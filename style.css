@@ -125,7 +125,16 @@ body {
     padding-bottom: 2rem;
     margin-bottom: 2rem;
     border-bottom: 2px dotted #aaa;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
+
+.act.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .act:last-child {
     border-bottom: none;
 }
