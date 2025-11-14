@@ -79,8 +79,10 @@ body {
 /* O PÔSTER */
 .show-poster {
     height: 550px;
+    width: 100%;
+    background-image: url('images/capa-desktop.svg'); 
     background-size: cover;
-    background-position: center;
+    background-position: bottom center;
     border-top: 1px solid #333;
     border-bottom: 1px solid #333;
     transition: transform 0.4s ease;
@@ -88,16 +90,6 @@ body {
 
 .playbill-cover:hover .show-poster {
     transform: scale(1.03); /* Efeito de zoom no pôster */
-}
-
-.show-title {
-    font-family: var(--font-logo);
-    color: #FFFFFF;
-    text-align: center;
-    padding: 1.5rem;
-    font-size: 2.2rem;
-    letter-spacing: 1px;
-    background-color: var(--color-playbill-black);
 }
 
 /* EFEITO HOLOFOTE (JS) */

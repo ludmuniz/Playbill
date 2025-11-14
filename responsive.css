@@ -21,6 +21,17 @@
         text-align: center;
     }
 
+    .show-poster {
+        height: 100%;
+        flex-grow: 1;
+        width: 100%;
+        border-radius: 0;
+        border-top: 1px solid #333;
+        border-bottom: 1px solid #333;
+        background-image: url('images/capa-mobile.svg'); 
+        background-position: bottom center; 
+    }
+
     .theatre-name {
         font-family: 'EB Garamond', serif;
         font-weight: 400 !important;
@@ -41,7 +52,6 @@
         font-size: 2rem;
     }
 
-    /* Elenco empilhado */
     .cast-list {
         flex-direction: column;
         align-items: center;
@@ -75,21 +85,19 @@
 /* Celulares */
 @media (max-width: 550px) {
     .playbill-cover {
-        width: 95%;
+        max-width: 100%;
+        width: 100%;
         height: 90vh;
-        margin: 1rem auto;
+        margin: 0;
+        border: none;
+        box-shadow: none;
+        display: flex;
+        flex-direction: column;
     }
 
     .playbill-header {
         font-size: 0.7rem;
         padding: 8px 10px;
-    }
-
-    .show-poster {
-        height: 400px;
-    }
-    .show-title {
-        font-size: 1.8rem;
     }
 
     .timer-container {
