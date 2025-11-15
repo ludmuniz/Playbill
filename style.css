@@ -378,3 +378,73 @@ body {
     font-weight: bold;
     margin-top: 1.5rem;
 }
+#musical-numbers {
+    padding-top: 1rem;
+}
+
+.musical-list-container {
+    display: block;
+    width: 100%;
+}
+
+.act-songs {
+    width: 100%;
+}
+
+.act-songs + .act-songs {
+    margin-top: 2.5rem;
+}
+
+.act-songs h3 {
+    font-family: var(--font-logo);
+    font-size: 2rem;
+    color: #333;
+    text-transform: uppercase;
+    text-align: center;
+    border: none; 
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.act-songs h3::before,
+.act-songs h3::after {
+    content: '';
+    flex-grow: 1;
+    height: 1px;
+    background: #ccc;
+}
+
+.song-list {
+    list-style: none;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.song-item {
+    font-family: var(--font-logo); 
+    font-style: normal;
+    text-transform: uppercase;   
+    text-align: center;  
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    color: #444;
+    
+    padding: 0.8rem 0.5rem;
+    border-bottom: 1px solid #eee; 
+    
+    transition: all 0.3s ease-out;
+    position: relative;
+    padding-left: 0;
+}
+
+.song-item:last-child {
+    border-bottom: none;
+}
+
+.song-item:hover {
+    color: var(--color-playbill-black);
+    background-color: #fcfcfc;
+}

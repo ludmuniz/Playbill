@@ -143,4 +143,11 @@
     .lightbox-content {
         max-width: 90%;
     }
+
+    .song-list {
+    max-width: 95%; 
+    }
+    .song-item {
+        font-size: 1rem;
+    }
 }
